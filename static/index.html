@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - Open Source</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <!-- Header -->
+            <div class="header">
+                <h1>🤖 AI Assistant</h1>
+                <p id="status" class="status">Conectando...</p>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="messages" class="messages">
+                <div class="message bot-message">
+                    <p>¡Hola! Soy un asistente de IA de código abierto. Puedes preguntarme lo que quieras y te responderé en tiempo real. ¿En qué puedo ayudarte?</p>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Escribe tu pregunta aquí..."
+                    autocomplete="off"
+                >
+                <button id="sendBtn" onclick="sendMessage()">
+                    <span>Enviar</span>
+                </button>
+            </div>
+
+            <!-- Info -->
+            <div class="info">
+                <small>💡 Las respuestas se procesan localmente en tu computadora</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
